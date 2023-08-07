@@ -65,7 +65,6 @@ const FlatListComp = ({ dataNew, getData }) => {
 
   const SelectedItem = (item) => {
     setSelected(item);
-    alert(selected.id)
     setFullName(item.fullName);
     setEmail(item.email);
     setAvatarUrl(item.avatarUrl);
