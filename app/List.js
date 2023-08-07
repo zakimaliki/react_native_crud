@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { NativeBaseProvider } from 'native-base';
 import FlatListComp from '../components/FlatListComp';
 import axios from 'axios';
-import ModalCreate from '../components/ModalCreate';
 
 
 const List = () => {
@@ -19,7 +18,6 @@ const List = () => {
     }
   return (
     <NativeBaseProvider>
-      <ModalCreate getData={getData}/>
       <FlatListComp dataNew={data} getData={getData}/>
     </NativeBaseProvider>
   )
